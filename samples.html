@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+
+<head onresize="iframeLoaded()">
+  <title>Request a Sample</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en-us">
+  <meta http-equiv="Content-Type" content="text/html">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/main.css" / rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="js/scripts.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body onload="setTimeout(iframeLoaded, 500)">
+  <header id="nav">
+    <!--To find navbar html go to templates/navtemp.html-->
+  </header>
+  <div class="page-description">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="page-description">REQUEST A SAMPLE</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="intro col-md-12">
+        <p>
+          To request a sample simply fill out the form below. We will contact you should we have any questions in regards to your request.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+      </div>
+    </div>
+  </div>
+  <iframe id="idIframe" src="forms/samples/form.html" frameborder="0" width="100%">
+
+  </iframe>
+  <footer id="foot">
+    <!--To find footer html go to templates/foottem.html-->
+  </footer>
+  <script type="text/javascript">
+    navtemp();
+    foottemp();
+    window.onload = function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if (iFrameID) {
+        // here you can make the height, I delete it first, then I make it again
+        iFrameID.height = "";
+        iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + 50 + "px";
+      }
+    }
+    window.onresize = function iframeLoaded() {
+      var iFrameID = document.getElementById('idIframe');
+      if (iFrameID) {
+        // here you can make the height, I delete it first, then I make it again
+        iFrameID.height = "";
+        iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + 50 + "px";
+      }
+    }
+  </script>
+</body>
+
+</html>
