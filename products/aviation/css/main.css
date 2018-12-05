@@ -1,0 +1,414 @@
+/* ------------------------------------------
+  CSS RESET
+--------------------------------------------- */
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, hr, fieldset, form, label, legend, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, summary, hgroup {
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
+}
+
+a:active, a:hover {
+  outline: 0%;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* ------------------------------------------
+    NAVBAR STYLES
+--------------------------------------------- */
+.navbar-toggler {
+  border: 0px !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.navbar-expand-md .navbar-nav>li>a:hover, .navbar-expand-lg .navbar-nav>li>a:focus {
+  color: #000;
+  /*Sets the text hover color on navbar*/
+}
+
+.navbar-expand-md .navbar-nav>.active>a, .navbar-expand-lg .navbar-nav>.active>a:hover, .navbar-expand-lg .navbar-nav>.active>a:focus {
+  color: #ffffff !important;
+  /*BACKGROUND color for active*/
+  background-color: #2474a9 !important;
+}
+
+.navbar-expand-md {
+  background-color: #2474a9 !important;
+  border-color: #2474a9 !important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  color: #2474a9 !important;
+  text-decoration: none !important;
+  background-color: #ffffff !important;
+  /*change color of links in drop down here*/
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  background-color: #428ab8 !important;
+  /*Change rollover cell color here*/
+}
+
+.navbar-expand-md .navbar-nav>li>a {
+  color: #ffffff !important;
+  /*Change active text color here*/
+  text-align: center;
+}
+
+#x-icon {
+  display: none;
+}
+
+#banner {
+  background-color: #2474a9;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+#banner img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.nav-link {
+  display: inline-block !important;
+}
+
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #logo img {
+    height: 125px !important;
+  }
+
+  .navbar-brand {
+    float: none;
+    margin: auto;
+    align-items: center !important;
+  }
+
+  .navbar.navbar-expand-sm .navbar-brand {
+    margin-top: -10px !important;
+  }
+}
+
+/* ------------------------------------------
+    NAVBAR STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+    FOOTER STYLES
+--------------------------------------------- */
+footer {
+  color: #ffffff !important;
+  background-color: #2474a9;
+  text-align: center;
+  padding: 25px;
+}
+
+.footer-row {
+  display: inline-block !important;
+}
+
+.footerlinks li {
+  display: inline;
+}
+
+.footerlinks li>a {
+  color: #ffffff !important;
+}
+
+.footerlinks li+li:before {
+  content: " | ";
+  padding: 0 1px;
+}
+
+/* ------------------------------------------
+    FOOTER STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+    GENERAL PAGE STYLES
+--------------------------------------------- */
+#enlargeImageModal .modal-dialog{
+  text-align:center;
+}
+
+.carousel-item img{
+  cursor: zoom-in;
+}
+
+#carousel-thumb{
+  background-color: #66000000 !important;
+}
+.carousel-thumbnails .carousel-indicators img {
+  max-width: 100px;
+  height: 50px;
+  overflow: hidden;
+  display: block;
+}
+
+.carousel-thumbnails .carousel-indicators li {
+  height: auto;
+  max-width: 100px;
+  width: 100px;
+  border: none;
+  box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.carousel-thumbnails .carousel-indicators li.active {
+  border-bottom: 4px solid #2474a9;
+}
+
+#thumbs{
+  margin-top: 5px;
+  position: sticky;
+}
+
+.page-description {
+  color: #ffffff !important;
+  background-color: #064873 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-description h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem !important;
+  margin: 0px;
+}
+
+.page-description h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.description p {
+  text-align: left;
+}
+
+.description h3 {
+  color: #064873 !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.product-info {
+  margin-top: 50px;
+}
+
+.spacer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  padding: 20px;
+}
+
+.intro p {
+  margin-bottom: 0px !important;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  background-color: grey;
+}
+
+.img-overlay {
+  float: right;
+  position: relative;
+  padding: 0%;
+}
+
+.img-overlay .description {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.7;
+  filter: alpha(opacity=60);
+}
+
+.img-overlay .description .description-content {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+.show-mobile {
+  display: none;
+}
+
+@media(max-width:768px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .show-mobile {
+    display: inline !important;
+  }
+}
+
+@media(max-width:768px) {
+  .page-description h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-description h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .page-description h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem !important;
+  }
+}
+
+/* ------------------------------------------
+    GENERAL PAGE STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+    INDEX STYLES
+--------------------------------------------- */
+#product-spacer{
+  border-top: 1px solid rgba(36, 116, 169, 100)
+}
+#quote-btn {
+ border: none;
+ background-color: #2474a9;
+ color: white;
+ padding: 2px 10px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+}
+#quote-btn:active {
+  background-color: #428ab8
+}
+
+.carousel {
+  background: #444;
+}
+
+.carousel-item .img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-item a {
+  display: block;
+  width: 100%;
+}
+
+.carousel-caption {
+  padding: 0px !important;
+}
+
+.carousel-caption p {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0px !important;
+}
+
+.tag-line {
+  padding: 50px;
+}
+
+.tag-line>center>h1 {
+  font-family: 'Lato', sans-serif !important;
+  color: #1eb76d !important;
+  font-size: 2.5rem !important;
+}
+
+.index-container.container {
+  padding: 10px;
+}
+
+.background {
+  color: #ffffff;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#indexbg1 {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/index/indexbg1.png');
+}
+
+#indexbg2 {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/index/indexbg2.png');
+}
+
+.video-text {
+  max-width: 404.167px !important;
+}
+
+@media(max-width:768px) {
+  .video-text {
+    max-width: inherit !important;
+  }
+
+  .tag-line>center>h1 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .tag-line>center>h1 {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* ------------------------------------------
+    INDEX STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+    CONTACT STYLES
+--------------------------------------------- */
+.contact-header {
+  font-family: 'Lato', sans-serif !important;
+  color: #2474a9 !important;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------
+    CONTACT STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+    ABOUT US STYLES
+--------------------------------------------- */
+@media(max-width:768px) {
+  .text-spacer {
+    padding-top: 10px;
+  }
+}
+
+/* ------------------------------------------
+    ABOUT US STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+    SAMPLE STYLES
+--------------------------------------------- */
+/* ------------------------------------------
+    SAMPLE STYLES
+--------------------------------------------- */
